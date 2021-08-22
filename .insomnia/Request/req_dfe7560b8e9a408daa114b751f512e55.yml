@@ -1,0 +1,37 @@
+_id: req_dfe7560b8e9a408daa114b751f512e55
+type: Request
+parentId: wrk_643bf897f9dd4462b75c074abb0a496c
+modified: 1629601405150
+created: 1629529349358
+url: https://zed-ql.zed.run/graphql
+name: My Request
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query ($input: GetRaceResultsInput, $before: String, $after:
+    String, $first: Int, $last: Int) {\n  getRaceResults(before: $before, after:
+    $after, first: $first, last: $last, input: $input) {\n    edges
+    {\n      cursor\n      node
+    {\n        country\n        city\n        name\n        length\n        startTime\n        fee\n        raceId\n        weather\n        status\n        class\n        prizePool
+    {\n          first\n          second\n          third\n        }\n        horses
+    {\n          horseId\n          finishTime\n          finalPosition\n          name\n          gate\n          ownerAddress\n          bloodline\n          gender\n          breedType\n          gen\n          coat\n          hexColor\n          imgUrl\n          class\n          stableName\n        }\n      }\n    }\n    pageInfo
+    {\n      startCursor\n      endCursor\n      hasNextPage\n      hasPreviousPage\n    }\n  }\n}\n","variables":{"first":2,"input":{"distance":{"from":1000,"to":2600}}}}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ec518edd6feb43ed9f7f08f60b4b0878
+  - id: pair_05f349b690e34ec1bae78dc1f80fba2c
+    name: x-developer-secret
+    value: '"\"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJjcnlwdG9maWVsZF9hcGkiLCJleHAiOjE2MzE5NDQyMjUsImlhdCI6MTYyOTUyNTAyNSwiaXNzIjoiY3J5cHRvZmllbGRfYXBpIiwianRpIjoiZjQ3MmJhZDItYzAyNi00YmE1LWIyMjQtZGUxNmNhZDFjOWQ5IiwibmJmIjoxNjI5NTI1MDI0LCJzdWIiOnsiZXh0ZXJuYWxfaWQiOiI0ZjgzYjcwMi0zMjRjLTQxODYtYmRiNS03ZGQwNjMzZGU2MjMiLCJpZCI6MTY0MjY4LCJwdWJsaWNfYWRkcmVzcyI6IjB4YUNENTBkOTVmOTc3NDUzQTBDQzk2Nzc3MDJlMzM5MTUwNDc4MDk1NSIsInN0YWJsZV9uYW1lIjoiS2lsbHltYWJvYiBTdGFibGVzIn0sInR5cCI6ImFjY2VzcyJ9.px9sP6kejBnXrv7xXJ61BmmGHIEhEJjftuvqHa7fJHyDfk4LL2lwQ173kjDmwy3DmoOHPvvN2UkAvvJWCc3HEg\""'
+    description: ""
+authentication: {}
+metaSortKey: -1629529349358
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
